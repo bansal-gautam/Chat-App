@@ -1,17 +1,24 @@
 import React from "react";
+import Filter from "./Filter";
+import Chat from "./Chat";
 
-import classes from "./Header.module.css";
-
-const Header = () => {
+const Header = (props) => {
+  const filterHandler = (value) => {
+    props.onChange(value);
+  };
   return (
-    <div className={classes.header}>
-      <h3>Filter by Title / Order ID</h3>
-      <input
-        className={classes.search}
-        type="text"
-        placeholder="Start typing to search"
-      />
-    </div>
+    <>
+      {props.section === "left-section" ? (
+        <Filter getfilter={filterHandler} />
+      ) : (
+        <Chat
+          src={props.data.imageURL}
+          title={props.data.title}
+          onToggle={props.onToggle}
+          width={props.width}
+        />
+      )}
+    </>
   );
 };
 

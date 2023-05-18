@@ -1,0 +1,32 @@
+.container {
+    flex: 1;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: rgb(204, 204, 204);
+}
+
+.empty {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dummy {
+    flex: 1 1 auto;
+}
+
+.date {
+    margin: 40px auto 20px auto;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 10px;
+}

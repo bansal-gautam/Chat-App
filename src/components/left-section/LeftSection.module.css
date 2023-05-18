@@ -1,0 +1,19 @@
+.container {
+    width: 100vw;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.con {
+    width: 40vw;
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.con::-webkit-scrollbar {
+    display: none;
+  }
+
+  .toggle {
+    display: none;
+  }
